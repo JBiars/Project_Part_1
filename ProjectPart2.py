@@ -27,4 +27,18 @@ else:
     print(language_menu)
    
 
-    
+# Create menu of score types
+# Which score type a user initially selects will determine the calculations that will ultimately be run
+
+scoretype_menu = {
+    1 : "Standard Score",
+    2 : "Scaled Score",
+    3 : "T-Score",
+    4 : "z-score"
+}
+
+print(scoretype_menu)
+
+score_selection = int(input("Enter Selection: "))
+print(score_selection, ":", scoretype_menu[score_selection])
+  
